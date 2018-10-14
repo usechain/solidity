@@ -814,7 +814,6 @@ BOOST_AUTO_TEST_CASE(create_two_args)
 		BOOST_CHECK(callFallbackWithValue(42) == encodeArgs(u256(42)));
 	}
 }
-BO
 
 BOOST_AUTO_TEST_CASE(sha3_two_args)
 {

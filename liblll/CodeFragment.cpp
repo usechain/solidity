@@ -238,8 +238,8 @@ void CodeFragment::constructOperation(sp::utree const& _t, CompilerState& _s)
 				if (c++)
 				{
 					auto fragment = CodeFragment(i, _s, m_readFile, true).m_asm;
-					if ((m_asm.deposit() + fragment.deposit()) < 0)
-						error<IncorrectParameterCount>("The assembly instruction resulted in stack underflow");
+//					if ((m_asm.deposit() + fragment.deposit()) < 0)
+//						error<IncorrectParameterCount>("The assembly instruction resulted in stack underflow");
 					m_asm.append(fragment);
 				}
 		}
